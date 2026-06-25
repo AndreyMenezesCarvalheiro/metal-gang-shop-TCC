@@ -149,3 +149,18 @@ nav a{
     color: white;
     margin-top: 5px;
 }
+.produto button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    background-color: #333;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+}
+
+.produto button:hover{
+    background-color: #555;
+}
