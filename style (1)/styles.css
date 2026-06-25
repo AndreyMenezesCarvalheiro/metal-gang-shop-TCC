@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: black;
     scroll-snap-type: y mandatory;
@@ -16,151 +16,154 @@ body{
 }
 
 /* header */
-
-header{
+header {
     background-color: black;
     height: 80px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 30px;
-
     position: fixed;
     top: 0;
     width: 100%;
-
     z-index: 1000;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: 22px;
     font-weight: bold;
 }
 
-nav{
+nav {
     display: flex;
     gap: 30px;
 }
 
-nav a{
+nav a {
     color: white;
     text-decoration: none;
     font-size: 15px;
 }
 
-.menu-direita{
+.menu-direita {
     display: flex;
     gap: 20px;
 }
 
-.menu-direita a{
+.menu-direita a {
     color: white;
     text-decoration: none;
     font-size: 14px;
 }
 
 /* banner */
-
-.banner{
+.banner {
     height: 100vh;
     scroll-snap-align: start;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
 /* Categoria */
-
-.categoria{
+.categoria {
     min-height: 100vh;
-
     scroll-snap-align: start;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding-top: 120px;
     padding-bottom: 50px;
-
     color: white;
 }
 
-.categoria h1{
+.categoria h1 {
     font-size: 40px;
     margin-bottom: 40px;
 }
 
 /* Produto */
-
-.produtos{
+.produtos {
     display: grid;
-
     grid-template-columns: repeat(3, 250px);
-
     gap: 30px;
 }
 
-.produto{
+.produto {
     width: 250px;
     height: 420px;
-
     background-color: #1a1a1a;
-
     border: 2px solid #444;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 10px;
-
     transition: 0.3s;
 }
 
-.produto:hover{
+.produto:hover {
     transform: scale(1.05);
 }
 
-.produto img{
+.produto img {
     width: 100%;
     height: 280px;
-
     background-color: #333;
-
     border: 1px solid #666;
-
     object-fit: cover;
 }
 
-.produto h3{
+.produto h3 {
     color: white;
     margin-top: 10px;
     text-align: center;
 }
 
-.produto p{
+.produto p {
     color: white;
     margin-top: 5px;
 }
-.produto button{
+
+.produto button {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-
     background-color: #333;
     color: white;
-
     border: none;
     cursor: pointer;
 }
 
-.produto button:hover{
+.produto button:hover {
     background-color: #555;
+}
+footer{
+    background-color: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+footer p{
+    margin-top: 10px;
+}
+.menu-direita a img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+    transition: 0.2s;
+}
+
+.menu-direita a img:hover {
+    transform: scale(1.2);
+}
+
+.menu-direita a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
 }
